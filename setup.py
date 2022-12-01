@@ -70,7 +70,7 @@ To create the package for pypi.
 import os
 import re
 import shutil
-from distutils.core import Command
+from distutils.core import Command  # import command
 from pathlib import Path
 
 from setuptools import find_packages, setup
