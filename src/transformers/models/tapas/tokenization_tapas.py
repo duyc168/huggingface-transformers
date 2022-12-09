@@ -1111,7 +1111,7 @@ class TapasTokenizer(PreTrainedTokenizer):
         )
 
     @add_end_docstrings(ENCODE_KWARGS_DOCSTRING, TAPAS_ENCODE_PLUS_ADDITIONAL_KWARGS_DOCSTRING)
-    def prepare_for_model(
+    def prepare_for_model(  ## 注释：encode_plus定义的地方
         self,
         raw_table: "pd.DataFrame",
         raw_query: Union[
